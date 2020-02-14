@@ -154,4 +154,226 @@ body #nav:checked ~ .nav_nav {
   }
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background: #e8eaef;
+}
+
+.titre {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  font-size: 45px;
+  color: #3f3f3fef;
+  margin-bottom: 2px;
+}
+
+.-titre {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  font-size: 22px;
+  color: #5067b3;
+  margin-top: 4px;
+}
+
+div.gallery {
+  margin: 20px;
+  width: 245px;
+}
+
+.cp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0% 10% 0% 10%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.desc {
+  margin-top: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #3f3f3fef;
+}
+
+.ret {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #464545d0;
+}
+
+.servises .h4 {
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.servises .sect {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.servises .sect .part1 {
+  padding: 20px 120px;
+}
+.servises .sect span {
+  color: #220ddd;
+}
+.servises .img {
+  display: flex;
+  margin: 40px;
+}
+.servises p {
+  max-width: 500px;
+  padding: 20px 0 30px 0;
+}
+.servises strong {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+@media (max-width: 374px) {
+  .h4 {
+    justify-content: space-between;
+  }
+}
+body .equipe {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: auto auto auto;
+}
+@media (max-width: 700px) {
+  body .equipe {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+}
+body .equipe .equipe_title {
+  grid-column: 2/6;
+  grid-row: 1/2;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+body .equipe .mbr_1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  width: 400px;
+  color: white;
+  height: 840px;
+  width: 100%;
+}
+body .equipe .mbr_1 button {
+  border: none;
+  color: white;
+}
+body .equipe .mbr_1 button h1 {
+  text-align: center;
+  margin: 5px auto;
+  padding: 10px 40px;
+  background-color: #3D3D3F;
+  border-radius: 100px;
+  width: 100px;
+}
+body .equipe .mbr_1 h2 {
+  margin-top: 400px;
+}
+body .equipe .mbr_2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background: url(../img/2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  width: 400px;
+  color: white;
+  height: 840px;
+  width: 100%;
+}
+body .equipe .mbr_2 button {
+  border: none;
+  color: white;
+}
+body .equipe .mbr_2 button h1 {
+  text-align: center;
+  margin: 5px auto;
+  padding: 10px 40px;
+  background-color: #3D3D3F;
+  border-radius: 100px;
+  width: 100px;
+}
+body .equipe .mbr_2 h2 {
+  margin-top: 400px;
+}
+body .equipe .mbr_2 button h1 {
+  background-color: #35C2CD;
+}
+body .equipe .mbr_3 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  background: url(../img/3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  width: 400px;
+  color: white;
+  height: 840px;
+  width: 100%;
+}
+body .equipe .mbr_3 button {
+  border: none;
+  color: white;
+}
+body .equipe .mbr_3 button h1 {
+  text-align: center;
+  margin: 5px auto;
+  padding: 10px 40px;
+  background-color: #3D3D3F;
+  border-radius: 100px;
+  width: 100px;
+}
+body .equipe .mbr_3 h2 {
+  margin-top: 400px;
+}
+body .equipe .mbr_4 {
+  grid-column: 5/6;
+  grid-row: 2/3;
+  background: url(../img/4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  width: 400px;
+  color: white;
+  height: 840px;
+  width: 100%;
+}
+body .equipe .mbr_4 button {
+  border: none;
+  color: white;
+}
+body .equipe .mbr_4 button h1 {
+  text-align: center;
+  margin: 5px auto;
+  padding: 10px 40px;
+  background-color: #3D3D3F;
+  border-radius: 100px;
+  width: 100px;
+}
+body .equipe .mbr_4 h2 {
+  margin-top: 400px;
+}
+
 /*# sourceMappingURL=style.css.map */
