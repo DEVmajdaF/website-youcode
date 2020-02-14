@@ -376,4 +376,102 @@ body .equipe .mbr_4 h2 {
   margin-top: 400px;
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background-image: url(../img/footer-image.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+}
+footer .sas {
+  background-color: rgba(63, 84, 156, 0.7);
+  background-size: 100%;
+  color: white;
+}
+footer .sas .div1 {
+  text-align: center;
+}
+footer .sas .div1 h1 {
+  font-size: 45px;
+}
+footer .sas .div1 h3 {
+  font-size: 26px;
+}
+footer .sas .div1 p {
+  font-size: 17px;
+}
+footer .sas .botonat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .sas .botonat .btn1 {
+  text-align: center;
+}
+footer .sas .botonat .btn1 button {
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
+  color: black;
+}
+footer .sas .botonat .btn2 {
+  text-align: center;
+}
+footer .sas .botonat .btn2 button {
+  background-color: #5cdce6;
+  border: none;
+  border-radius: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
+  color: white;
+}
+footer .sas .sec1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .sas .sec1 .visitez-ns {
+  margin-right: 49px;
+}
+footer .sas .sec1 .socialmedia {
+  margin-top: 52px;
+}
+footer .sas .sec2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .sas .sec2 .Links {
+  margin-top: 19px;
+}
+footer .sas .sec2 .Links a {
+  color: white;
+}
+@media (min-width: 517px) {
+  footer .sass .sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .sass .sec1 p {
+    text-align: none;
+  }
+  footer .sass .sec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
