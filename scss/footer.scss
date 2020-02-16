@@ -1,144 +1,120 @@
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 footer {
-    background-image: url(../img/footer-image.png);
-    background-repeat: no-repeat;
-    background-size: 100% 1000px;
+  background-image: url(../img/footer-image.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  margin-top: -60px;
+  z-index: 10;
 
+  .sas {
+    background-color: rgba($color: #3f549c, $alpha: 0.7);
+    background-size: 100%;
+    color: white;
 
+    .div1 {
+      text-align: center;
 
-    .sas {
+      h1 {
+        font-size: 45px;
+      }
 
+      h3 {
+        font-size: 26px;
+      }
 
-        background-color: rgba($color: #3f549c, $alpha: 0.7);
-        background-size: 100%;
-        color: white;
-
-        .div1 {
-            text-align: center;
-
-
-            h1 {
-                font-size: 45px;
-            }
-
-            h3 {
-                font-size: 26px;
-            }
-
-            p {
-                font-size: 17px;
-            }
-        }
-
-        .botonat {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-
-            .btn1 {
-                text-align: center;
-
-                button {
-                    background-color: white;
-                    border: none;
-                    border-radius: 8px;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    padding-right: 40px;
-                    padding-left: 40px;
-                    color: black;
-
-                }
-
-                p {}
-            }
-
-            .btn2 {
-                text-align: center;
-
-                button {
-                    background-color: #5cdce6;
-                    border: none;
-                    border-radius: 8px;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    padding-right: 40px;
-                    padding-left: 40px;
-                    color: white;
-                }
-
-                p {}
-            }
-
-        }
-
-        .sec1 {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-
-            .visitez-ns {
-                margin-right: 49px;
-
-                h3 {}
-
-                p {}
-            }
-
-            .socialmedia {
-                margin-top: 52px;
-            }
-        }
-
-        .sec2 {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-
-            .Links {
-                margin-top: 19px;
-
-
-                a {
-                    color: white;
-
-                }
-
-            }
-
-            .rights-reserverd {}
-        }
+      p {
+        font-size: 17px;
+      }
     }
+
+    .botonat {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .btn1 {
+        text-align: center;
+
+        button {
+          background-color: white;
+          border: none;
+          border-radius: 8px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-right: 40px;
+          padding-left: 40px;
+          color: black;
+        }
+      }
+
+      .btn2 {
+        text-align: center;
+
+        button {
+          background-color: #5cdce6;
+          border: none;
+          border-radius: 8px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-right: 40px;
+          padding-left: 40px;
+          color: white;
+        }
+      }
+    }
+
+    .sec1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .visitez-ns {
+        margin-right: 109px;
+      }
+      .socialmedia {
+        margin-top: 52px;
+      }
+    }
+
+    .sec2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .Links {
+        margin-top: 19px;
+        a {
+          color: white;
+        }
+      }
+      .rights-reserverd {
+      }
+    }
+  }
 }
 
 @media (min-width: 517px) {
-    footer {
-        .sass {
-            .sec1 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                p {
-                    text-align: none;
-                }
-
-
-            }
-
-            .sec2 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
+  footer {
+    .sass {
+      .sec1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          text-align: none;
         }
+      }
+      .sec2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
     }
-
+  }
 }

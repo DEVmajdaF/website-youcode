@@ -241,6 +241,7 @@ div.gallery {
   }
 }
 body .equipe {
+  background-color: #E8EAEF;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
   grid-template-rows: auto auto auto;
@@ -268,7 +269,6 @@ body .equipe .mbr_1 {
   background-position: center;
   background-size: contain;
   text-align: center;
-  width: 400px;
   color: white;
   height: 840px;
   width: 100%;
@@ -276,12 +276,14 @@ body .equipe .mbr_1 {
 body .equipe .mbr_1 button {
   border: none;
   color: white;
+  background-color: transparent;
+  grid-row: 2/3;
 }
 body .equipe .mbr_1 button h1 {
   text-align: center;
   margin: 5px auto;
   padding: 10px 40px;
-  background-color: #3D3D3F;
+  background-color: #3d3d3f;
   border-radius: 100px;
   width: 100px;
 }
@@ -296,7 +298,6 @@ body .equipe .mbr_2 {
   background-position: center;
   background-size: contain;
   text-align: center;
-  width: 400px;
   color: white;
   height: 840px;
   width: 100%;
@@ -304,12 +305,14 @@ body .equipe .mbr_2 {
 body .equipe .mbr_2 button {
   border: none;
   color: white;
+  background-color: transparent;
+  grid-row: 2/3;
 }
 body .equipe .mbr_2 button h1 {
   text-align: center;
   margin: 5px auto;
   padding: 10px 40px;
-  background-color: #3D3D3F;
+  background-color: #3d3d3f;
   border-radius: 100px;
   width: 100px;
 }
@@ -317,7 +320,7 @@ body .equipe .mbr_2 h2 {
   margin-top: 400px;
 }
 body .equipe .mbr_2 button h1 {
-  background-color: #35C2CD;
+  background-color: #35c2cd;
 }
 body .equipe .mbr_3 {
   grid-column: 4/5;
@@ -327,7 +330,6 @@ body .equipe .mbr_3 {
   background-position: center;
   background-size: contain;
   text-align: center;
-  width: 400px;
   color: white;
   height: 840px;
   width: 100%;
@@ -335,12 +337,14 @@ body .equipe .mbr_3 {
 body .equipe .mbr_3 button {
   border: none;
   color: white;
+  background-color: transparent;
+  grid-row: 2/3;
 }
 body .equipe .mbr_3 button h1 {
   text-align: center;
   margin: 5px auto;
   padding: 10px 40px;
-  background-color: #3D3D3F;
+  background-color: #3d3d3f;
   border-radius: 100px;
   width: 100px;
 }
@@ -355,7 +359,6 @@ body .equipe .mbr_4 {
   background-position: center;
   background-size: contain;
   text-align: center;
-  width: 400px;
   color: white;
   height: 840px;
   width: 100%;
@@ -363,12 +366,14 @@ body .equipe .mbr_4 {
 body .equipe .mbr_4 button {
   border: none;
   color: white;
+  background-color: transparent;
+  grid-row: 2/3;
 }
 body .equipe .mbr_4 button h1 {
   text-align: center;
   margin: 5px auto;
   padding: 10px 40px;
-  background-color: #3D3D3F;
+  background-color: #3d3d3f;
   border-radius: 100px;
   width: 100px;
 }
@@ -384,6 +389,8 @@ footer {
   background-image: url(../img/footer-image.png);
   background-repeat: no-repeat;
   background-size: 100% 1000px;
+  margin-top: -60px;
+  z-index: 11;
 }
 footer .sas {
   background-color: rgba(63, 84, 156, 0.7);
@@ -441,7 +448,7 @@ footer .sas .sec1 {
   justify-content: space-around;
 }
 footer .sas .sec1 .visitez-ns {
-  margin-right: 49px;
+  margin-right: 109px;
 }
 footer .sas .sec1 .socialmedia {
   margin-top: 52px;
