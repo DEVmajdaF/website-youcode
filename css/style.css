@@ -241,7 +241,7 @@ div.gallery {
   }
 }
 body .equipe {
-  background-color: #E8EAEF;
+  background-color: #e8eaef;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
   grid-template-rows: auto auto auto;
@@ -390,7 +390,7 @@ footer {
   background-repeat: no-repeat;
   background-size: 100% 1000px;
   margin-top: -60px;
-  z-index: 11;
+  z-index: 10;
 }
 footer .sas {
   background-color: rgba(63, 84, 156, 0.7);
