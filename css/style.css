@@ -157,7 +157,7 @@ body #nav:checked ~ .nav_nav {
 body {
   margin: 0;
   padding: 0;
-  background: #e8eaef;
+  
 }
 
 .titre {
@@ -208,7 +208,7 @@ div.gallery {
   font-size: 30px;
   justify-content: center;
   text-align: center;
-  margin-top: 50px;
+  
 }
 .servises .sect {
   display: flex;
