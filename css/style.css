@@ -1,3 +1,7 @@
+* {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -225,7 +229,7 @@ body .ret {
 body .servises {
   margin-top: -35px;
   padding: 6px;
-  background-color: #F2F4F7;
+  background-color: #f2f4f7;
 }
 body .servises .h4 {
   font-size: 30px;
