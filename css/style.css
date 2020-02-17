@@ -9,6 +9,8 @@ body #container {
   align-items: center;
 }
 body .logo_nav {
+  position: relative;
+  right: 200px;
   cursor: pointer;
 }
 body .nav_nav li {
@@ -17,6 +19,7 @@ body .nav_nav li {
   padding: 0 20px;
 }
 body .nav_nav li a {
+  font-size: 20px;
   color: black;
   text-decoration: none;
 }
@@ -26,6 +29,7 @@ body .button_nav {
   padding: 5px 15px;
 }
 body .button_nav a {
+  font-size: 20px;
   text-decoration: none;
   color: white;
 }
@@ -34,16 +38,17 @@ body #header {
   grid-template-columns: 50% auto;
 }
 body .content_header {
-  margin-left: 50px;
+  font-size: 25px;
+  margin-left: 200px;
 }
 body .content_header h1 {
-  font-size: 40px;
+  font-size: 50px;
   opacity: 0.7;
 }
 body .content_header a {
   color: white;
   text-decoration: none;
-  padding: 10px 45px;
+  padding: 15px 35px;
   border-radius: 8px;
   background-image: linear-gradient(to right, #5555a5, #5165b2, #3ea3c5, #3da6c6);
   position: relative;
@@ -52,25 +57,28 @@ body .content_header a {
 body p {
   opacity: 0.7;
 }
-body .vid_header {
-  float: right;
+body .vidd {
+  z-index: 1;
+}
+body .vidd .vid_header {
   background-image: linear-gradient(140deg, #4c6d7de0, #5a576fbb);
-  height: 450px;
+  height: 550px;
   position: relative;
   overflow: hidden;
 }
-body .vid_header video {
-  height: 450px;
+body .vidd .vid_header video {
+  height: 550px;
   float: right;
   z-index: -1;
   position: absolute;
 }
-body .vid_header p {
+body .vidd .vid_header p {
+  font-size: 30px;
   text-align: center;
   color: white;
   position: absolute;
   top: 340px;
-  right: 120px;
+  right: 140px;
 }
 body input {
   visibility: hidden;
@@ -117,6 +125,7 @@ body #nav:checked ~ .nav_nav {
     cursor: pointer;
     width: 48px;
     height: 48px;
+    z-index: 1;
   }
   body .nav-btn i {
     display: block;
@@ -136,6 +145,9 @@ body #nav:checked ~ .nav_nav {
     display: flex;
     flex-direction: column;
   }
+  body #container .logo_nav {
+    right: 100px;
+  }
   body .button_nav {
     visibility: hidden;
   }
@@ -143,45 +155,54 @@ body #nav:checked ~ .nav_nav {
     display: flex;
     flex-direction: column;
   }
-  body .vid_header {
+  body .vidd {
+    width: 100%;
+    z-index: -1;
+  }
+  body .vidd .vid_header {
     background-image: none;
   }
-  body .vid_header video {
+  body .vidd .vid_header video {
     width: 100%;
   }
+  body .content_header {
+    margin-left: 20px;
+  }
+  body .content_header h1 {
+    font-size: 30px;
+  }
+  body .content_header p {
+    font-size: 25px;
+  }
   body .content_header a {
-    margin-left: 80px;
+    font-size: 18px;
+    text-align: center;
   }
 }
 
 body {
   margin: 0;
   padding: 0;
-  
 }
-
-.titre {
+body .titre {
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
   font-size: 45px;
   color: #3f3f3fef;
   margin-bottom: 2px;
 }
-
-.-titre {
+body .-titre {
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
   font-size: 22px;
   color: #5067b3;
   margin-top: 4px;
 }
-
-div.gallery {
+body div.gallery {
   margin: 20px;
   width: 245px;
 }
-
-.cp {
+body .cp {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -189,57 +210,53 @@ div.gallery {
   flex-wrap: wrap;
   text-align: center;
 }
-
-.desc {
+body .desc {
   margin-top: 10px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #3f3f3fef;
 }
-
-.ret {
+body .ret {
   font-size: 18px;
   font-weight: lighter;
   color: #464545d0;
 }
-
-.servises .h4 {
+body .servises {
+  margin-top: -35px;
+  padding: 6px;
+  background-color: #F2F4F7;
+}
+body .servises .h4 {
   font-size: 30px;
   justify-content: center;
   text-align: center;
-  
 }
-.servises .sect {
+body .servises .sect {
   display: flex;
   margin-top: 50px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.servises .sect .part1 {
+body .servises .sect .part1 {
   padding: 20px 120px;
 }
-.servises .sect span {
+body .servises .sect span {
   color: #220ddd;
 }
-.servises .img {
+body .servises .img {
   display: flex;
   margin: 40px;
 }
-.servises p {
+body .servises p {
   max-width: 500px;
   padding: 20px 0 30px 0;
 }
-.servises strong {
+body .servises strong {
   margin-top: 40px;
   margin-left: 20px;
 }
 
-@media (max-width: 374px) {
-  .h4 {
-    justify-content: space-between;
-  }
-}
 body .equipe {
   background-color: #e8eaef;
   display: grid;
@@ -389,7 +406,7 @@ footer {
   background-image: url(../img/footer-image.png);
   background-repeat: no-repeat;
   background-size: 100% 1000px;
-  margin-top: -60px;
+  margin-top: -99px;
   z-index: 10;
 }
 footer .sas {

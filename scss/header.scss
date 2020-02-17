@@ -26,6 +26,8 @@ body {
     }
 
     .logo_nav {
+        position: relative;
+        right: 200px;
         cursor: pointer;
     }
 
@@ -36,6 +38,7 @@ body {
             padding: 0 20px;
 
             a {
+                font-size: 20px;
                 color: $color_1;
                 text-decoration: none;
             }
@@ -48,6 +51,7 @@ body {
         padding: 5px 15px;
 
         a {
+            font-size: 20px;
             text-decoration: none;
             color: $color_2;
         }
@@ -59,17 +63,18 @@ body {
     }
 
     .content_header {
-        margin-left: 50px;
+        font-size: 25px;
+        margin-left: 200px;
 
         h1 {
-            font-size: 40px;
+            font-size: 50px;
             opacity: 0.7;
         }
 
         a {
             color: $color_2;
             text-decoration: none;
-            padding: 10px 45px;
+            padding: 15px 35px;
             border-radius: 8px;
             background-image: linear-gradient(to right, #5555a5, #5165b2, #3ea3c5, #3da6c6);
             position: relative;
@@ -81,26 +86,30 @@ body {
         opacity: 0.7;
     }
 
-    .vid_header {
-        float: right;
-        background-image: linear-gradient(140deg, #4c6d7de0, #5a576fbb);
-        height: 450px;
-        position: relative;
-        overflow: hidden;
+    .vidd {
+        z-index: 1;
 
-        video {
-            height: 450px;
-            float: right;
-            z-index: -1;
-            position: absolute;
-        }
+        .vid_header {
+            background-image: linear-gradient(140deg, #4c6d7de0, #5a576fbb);
+            height: 550px;
+            position: relative;
+            overflow: hidden;
 
-        p {
-            text-align: center;
-            color: $color_2;
-            position: absolute;
-            top: 340px;
-            right: 120px;
+            video {
+                height: 550px;
+                float: right;
+                z-index: -1;
+                position: absolute;
+            }
+
+            p {
+                font-size: 30px;
+                text-align: center;
+                color: $color_2;
+                position: absolute;
+                top: 340px;
+                right: 140px;
+            }
         }
     }
 
@@ -142,6 +151,7 @@ body {
             box-shadow: 10px 10px 30px black;
 
             ul {
+
                 li {
                     a {
                         margin-left: 30px;
@@ -168,6 +178,7 @@ body {
             cursor: pointer;
             width: 48px;
             height: 48px;
+            z-index: 1;
 
             i {
                 display: block;
@@ -190,6 +201,10 @@ body {
         #container {
             display: flex;
             flex-direction: column;
+
+            .logo_nav {
+                right: 100px;
+            }
         }
 
         .button_nav {
@@ -201,17 +216,33 @@ body {
             flex-direction: column;
         }
 
-        .vid_header {
-            background-image: none;
+        .vidd {
+            width: 100%;
+            z-index: -1;
 
-            video {
-                width: 100%;
+            .vid_header {
+                background-image: none;
+
+                video {
+                    width: 100%;
+                }
             }
         }
 
         .content_header {
+            margin-left: 20px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+
             a {
-                margin-left: 80px;
+                font-size: 18px;
+                text-align: center;
             }
         }
     }
